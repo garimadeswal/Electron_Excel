@@ -1,0 +1,16 @@
+html ,body{
+    margin: 0 px;
+    padding: 0 px;
+    background-color: aqua;
+    font-size: 50px;
+}
+
+table , td{
+    border: 1px solid grey;
+    border-collapse: collapse;
+
+}
+/* table > td > input{
+    border: 0px;
+    width: 50px;
+} */

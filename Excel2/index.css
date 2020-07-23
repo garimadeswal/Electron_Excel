@@ -1,0 +1,149 @@
+html ,body{
+    margin: 0 px;
+    padding: 0 px;
+    /* background-color: aqua; */
+}
+title{
+    background-color: green;
+}
+#container
+{
+    display: flex;
+    flex-direction: column;
+   
+   border: 1px solid red;
+}
+#menu-bar
+{
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+    height: 20px;
+}
+#menu-bar > div 
+{
+    margin: 2px 5px 0px 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+#menu-bar > div:hover
+{
+    border-bottom: 2px solid white;
+}
+#formula-bar
+{
+    display: flex;
+    flex-direction: row;
+    background-color: yellow;
+    height: 25px;
+}
+#formula-bar > #cell
+{
+    flex:7%;
+}
+#formula-bar > #formula
+{
+    flex:95%;
+}
+#formula-bar > #separator
+{
+    flex:1%;
+    text-align: center;
+    background-color: white;
+}
+
+
+#content-container
+{
+    /* background-color: black; */
+    /* display: flex;
+    flex-direction: row; */
+    /* background-color: orange; */
+    height: 660px;
+    position: relative;
+    overflow: auto;
+}
+
+#tl-cell{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 25px;
+    width: 25px;
+    background-color: lightgrey;
+}
+
+#first-row{
+    position: absolute;
+    top:0px;
+    left: 25px;
+    height: 25px;
+    background-color: lightgrey;
+    display:flex;
+    flex-direction: row;
+   
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+#first-col{
+    position: absolute;
+    display: flex;
+    top: 25px;
+    width: 25px;
+    background-color: lightgray;
+    flex-direction: column;
+}
+.cell{
+    width:60px;
+    border: 1px solid black;
+    text-align: center;
+    box-sizing: border-box;
+    color: green;
+}
+#first-col > .cell{
+    border: 1px solid black;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#grid{
+    position: absolute;
+    display: flex;
+    top: 25px;
+    left: 25px;
+    flex-direction: column;
+    /* background-color: green; */
+}
+#grid .cell{
+    height: 25px;
+    width: 60px;
+}
+
+
+#sheet-bar
+{
+    display: flex;
+    flex-direction: row;
+    /* background-color: blue; */
+    height: 25px;
+}
+#sheet-bar > div{
+    padding: 2px;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+#sheet-bar > div:hover{
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+#sheet-bar > #add{
+    width: 20px;
+    text-align: center;
+}

@@ -1,0 +1,58 @@
+<html>
+    <head>
+       <title> Excel</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+      
+    </head>
+    <body>
+        <div id="container">
+        <div id="menu-bar">
+            <div>File</div>
+            <div>Home</div>
+            <div>Data</div>
+            <div>View</div>
+            <div>File</div>
+        </div>
+
+        <div id="formula-bar">
+            <input type="text" id='cell' >
+            <div id="separator">:</div>
+            <input type="text" id='formula' >
+        </div>
+
+        <div id="content-container">
+            <div id='tl-row'></div>
+
+            <div id='first-row'>
+                <% for(let i=0;i<col;i++){ %>
+                    
+                    <div class="cell"><%= String.fromCharCode('A'.charCodeAt(0)+i) %></div>
+                <% } %>
+            </div>
+            <div id='first-col'>
+                <% for(let i=0;i<row;i++){ %>
+                    <div class="cell"><%= i+1 %></div>
+                <% } %>
+            </div>
+            <div id='grid'>
+                <% for(let i=0;i<row;i++){ %>
+                    <div class="row">
+                    <% for(let j=0;j<col;j++){ %>
+                        <div class="cell">
+                             <%= String.fromCharCode('A'.charCodeAt(0)+j)+(i+1) %>
+                        </div>
+                    <% } %>
+                </div>
+                <% } %>
+            </div>
+        </div>
+        
+        <div id="sheet-bar">
+            <div>Sheet 1</div>
+            <div id="add">+</div>
+
+        </div>
+
+    </div>
+    </body>
+</html>
